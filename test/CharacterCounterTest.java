@@ -1,4 +1,5 @@
 import org.junit.Assert;
+import org.junit.Test;
 
 public class CharacterCounterTest {
 	@org.junit.Test
@@ -6,6 +7,13 @@ public class CharacterCounterTest {
 		CharacterCounter counter = new CharacterCounter("A");
 		int countA = counter.count('A');
 		Assert.assertEquals(1, countA);
+	}
+
+	@Test
+	public void count_stringAA_returnTwo() throws Exception {
+		CharacterCounter counter = new CharacterCounter("AA");
+		int countA = counter.count('A');
+		Assert.assertEquals(2, countA);
 	}
 
 }
