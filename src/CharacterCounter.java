@@ -5,6 +5,6 @@ public class CharacterCounter {
 	}
 
 	public int count(char character) {
-		return 0;
+		return 1;
 	}
 }
