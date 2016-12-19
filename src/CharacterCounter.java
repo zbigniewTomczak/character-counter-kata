@@ -9,7 +9,9 @@ public class CharacterCounter {
 	public int count(char character) {
 		int counter = 0;
 		for (int i = 0; i < string.length(); i++) {
-			counter++;
+			if (string.charAt(i) == character) {
+				counter++;
+			}
 		}
 		return counter;
 	}
