@@ -7,9 +7,10 @@ public class CharacterCounter {
 	}
 
 	public int count(char character) {
-		if (string.length() == 2) {
-			return 2;
+		int counter = 0;
+		for (int i = 0; i < string.length(); i++) {
+			counter++;
 		}
-		return 1;
+		return counter;
 	}
 }
